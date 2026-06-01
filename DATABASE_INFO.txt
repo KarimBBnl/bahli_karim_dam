@@ -1,0 +1,5 @@
+ENDPOINT: bahli-karim-dam.cgup9yonqtos.us-east-1.rds.amazonaws.com
+NOMBRE: bahli-karim-dam
+USUARIO: postgres
+PASWWORD: 12345678
+PUERTO: 5432

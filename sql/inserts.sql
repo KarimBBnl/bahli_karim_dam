@@ -1,0 +1,20 @@
+INSERT INTO LABORATORIO (ID, NOMBRE, PAIS, FECHA_FUNDACION, AUTOR_EXAMEN) VALUES 
+('1', 'LABORATORIO1', 'España', '1958-07-29', 'KARIM_BAHLI_DAM2'),
+('2', 'LABORATORIO2', 'Europa', '1975-05-30', 'KARIM_BAHLI_DAM2'),
+('3', 'LABORATORIOJAVA', 'Japón', '2003-10-01', 'KARIM_BAHLI_DAM2'),
+('4', 'INTELIJIJ', 'Rusia', '1992-02-25', 'KARIM_BAHLI_DAM2'),
+('5', 'EXCALIDRAW', 'China', '1993-04-22', 'KARIM_BAHLI_DAM2');
+
+INSERT INTO MUESTRAS_ADN (ID, CODIGO, TIPO, FECHA_EXTRACCION, FK_LABORATORIO_ID, AUTOR_EXAMEN) VALUES 
+('1',  11110, 'Pareja', '2026-04-24', 1, 'KARIM_BAHLI_DAM2'),
+('2',  11100, 'Familiar', '2025-10-21', 2, 'KARIM_BAHLI_DAM2'),
+('3', 11000, 'Amistad', '2026-11-23', 2, 'KARIM_BAHLI_DAM2'),
+('4', 10000, 'Matrimonio', '1957-10-04', 4, 'KARIM_BAHLI_DAM2'),
+('5', 00000, 'Carcel', '2011-09-29', 5, 'KARIM_BAHLI_DAM2');
+
+INSERT INTO ANALISIS (ID, MUTACION_DETECTADA, PORCENTAJE_COINCIDENCIA, OBSERVACIONES, FK_MUESTRASADN_ID, AUTOR_EXAMEN) VALUES 
+('1', 'Dragon', '5%', 'Estado critico', 1, 'KARIM_BAHLI_DAM2'),
+('2', 'Serpiente', '10%', 'Revision diaria', 2, 'KARIM_BAHLI_DAM2'),
+('3', 'Gato', '2%', 'Riesgo de muerte', 3, 'KARIM_BAHLI_DAM2'),
+('4','Escoba', '1%', 'Revision profunda lo antes posible', 4, 'KARIM_BAHLI_DAM2'),
+('5', 'Murcielago', '58%', 'Estado muy critico, revision urgente', 5, 'KARIM_BAHLI_DAM2');
